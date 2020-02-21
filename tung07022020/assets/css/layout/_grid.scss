@@ -1,0 +1,98 @@
+.container {
+    max-width: $grid-width;
+    margin: 0 auto;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+//3. Make row
+$num:(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+@each $col in $num {
+    .col-#{$col} {
+        flex: 0 0 calc((100% - #{$col-horizontal})/ #{$col});
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) {
+    .col-3,
+    .col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-bottom: 2rem;
+    }
+    .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-3,
+    .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+//4. Make row
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+//make flex
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-cen {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-h-cen {
+    justify-content: space-between;
+}
+
+.cen {
+    justify-content: center;
+    align-items: center;
+}
+
+//padding
+.padding-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.z-index {
+    z-index: 10;
+    position: relative;
+}

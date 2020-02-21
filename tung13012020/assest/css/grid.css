@@ -1,0 +1,128 @@
+/* =============================================================================== 
+   1. General
+=============================================================================== */
+/* Reset CSS */
+html {
+  font-size: 62.5%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.width-100 {
+  width: 100%; }
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto; } }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 660px;
+    margin: 0 auto; } }
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto; } }
+.col-1 {
+  flex: 0 0 100%;
+  padding: 0 2rem 0 2rem; }
+
+.col-2 {
+  flex: 0 0 50%;
+  padding: 0 2rem 0 2rem; }
+
+.col-3 {
+  flex: 0 0 33.3333333333%;
+  padding: 0 2rem 0 2rem; }
+
+.col-4 {
+  flex: 0 0 25%;
+  padding: 0 2rem 0 2rem; }
+
+.col-5 {
+  flex: 0 0 20%;
+  padding: 0 2rem 0 2rem; }
+
+.col-6 {
+  flex: 0 0 16.6666666667%;
+  padding: 0 2rem 0 2rem; }
+
+.col-7 {
+  flex: 0 0 14.2857142857%;
+  padding: 0 2rem 0 2rem; }
+
+.col-8 {
+  flex: 0 0 12.5%;
+  padding: 0 2rem 0 2rem; }
+
+.col-9 {
+  flex: 0 0 11.1111111111%;
+  padding: 0 2rem 0 2rem; }
+
+.col-10 {
+  flex: 0 0 10%;
+  padding: 0 2rem 0 2rem; }
+
+.col-40 {
+  flex: 0 0 40%; }
+
+.col-60 {
+  flex: 0 0 60%; }
+
+@media (max-width: 992px) {
+  .col-3,
+  .col-4 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  .col-2 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media screen and (max-width: 768px) {
+  .col-6 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+
+  .col-40,
+  .col-60 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 2rem; } }
+@media (max-width: 576px) {
+  .col-3,
+  .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.f-cen {
+  justify-content: space-between;
+  align-items: center; }
+
+.f-h-cen {
+  justify-content: space-between; }
+
+.cen {
+  justify-content: center;
+  align-items: center; }
+
+.padding-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
+/*# sourceMappingURL=grid.css.map */

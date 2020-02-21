@@ -1,0 +1,75 @@
+            @media screen and (max-width: 992px) {
+            /*header*/
+            .head__section {
+                padding: 0 2rem;
+            }
+            .header {}
+            .header .header__nav {
+                padding: 1rem;
+            }
+            .header .header__nav .logo {
+                order: 2;
+                flex: 0 0 30%;
+                max-width: 30%;
+            }
+            .header .header__nav .header__bar {
+                font-size: 5rem;
+                color: #fff;
+                flex: 0 0 30%;
+                max-width: 30%;
+                order: 1;
+                display: inline-block;
+                cursor: pointer;
+            }
+            .header .header__nav .nav__action {
+                order: 3;
+                flex: 0 0 30%;
+                max-width: 30%;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .header .header__nav .nav__menu {
+                max-height: 0;
+                order: 4;
+                position: absolute;
+                overflow: hidden;
+                align-items: center;
+                top: 75%;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(to right, #a527ac, #3483ff);
+                transition: 0.3s;
+            }
+            .header .header__nav .nav__menu--show {
+                max-height: 100vh;
+                padding-top: 2rem;
+            }
+            .header .header__nav .nav__menu li {
+                padding-bottom: 1rem;
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+            /*banner*/
+            .banner .banner__text {
+                padding: 20% 0 0;
+                text-align: center;
+            }
+            .banner .banner__img {
+                padding-top: 0;
+            }
+            .banner .banner__img img {
+                padding: 5% 0 0;
+            }
+            @media screen and (max-width: 768px) {}
+            @media screen and (max-width: 576px) {
+                .banner .banner__text h1 {
+                    font-size: 3rem;
+                }
+                .banner .banner__text {
+                    padding: 40% 0 0;
+                }
+                .header .logo img {
+                    width: 100%;
+                }
+            }

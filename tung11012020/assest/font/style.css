@@ -1,0 +1,9 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "2a65eb8ec98b556d4fba7545beb34e65";
+
+  src: url("./fonts/marshabelledemoversion-webfont.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/marshabelledemoversion-webfont.woff") format("woff"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

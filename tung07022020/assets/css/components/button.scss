@@ -1,0 +1,27 @@
+.button {
+    display: flex;
+    text-align: center;
+    a {
+        margin: auto;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 2rem;
+        transition: 0.4s;
+        border-radius: 3px;
+    }
+}
+
+.btn--medium {
+    padding: 1rem 3rem;
+}
+
+.btn-bg--primary {
+    background: $primary-color;
+    border: 1px solid $primary-color;
+}
+
+.hover-primery-op {
+    &:hover {
+        background: rgba(98, 45, 128, 0.2);
+    }
+}

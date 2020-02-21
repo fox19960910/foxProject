@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <div class="container">
+       <!-- Processbar -->
+    <ul class="process">
+        <li class="active">ACCOUNT SETUP</li>
+        <li>SOCIAL PROFILES</li>
+        <li>PERSONAL DETAILS</li>
+    </ul>
+   <!-- Form -->
+   <div class="wrap__form">
+        <!-- accountSetup -->
+        <div class="form acountSetup active">
+            <h2 class="form__title">CREATE YOUR ACCOUNT</h2>
+            <p class="form__des">This is step 1</p>
+            <p class="form__des error"></p>
+            <form action="">
+                <div class="form-control">
+                    <input id="email" type="email" name='email' placeholder="Your email" required>
+                </div>
+                <div class="form-control">
+                    <input id="password"  type="password" name='password' placeholder="Your password" required >
+                </div>
+                <div class="form-control">
+                    <input id="confirmPassword"  type="password" name='confirmPassword' placeholder="Confirm your password" required>
+                </div>
+                <div class="form-control">
+                    <button class="btn next">Next</button>
+                </div>
+            </form>
+        </div>
+        <!-- Social -->
+        <div class="form social">
+            <h2 class="form__title">SOCIAL PROFILES</h2>
+            <p class="form__des">Your presence on the social network</p>
+            <form action="">
+                <div class="form-control">
+                    <input type="text" name='twitter' placeholder="twitter">
+                </div>
+                <div class="form-control">
+                    <input type="text" name='facebook' placeholder="facebook">
+                </div>
+                <div class="form-control">
+                    <input type="text" name='google' placeholder="google plus">
+                </div>
+                <div class="form-control">
+                    <button class="btn prev">Previous</button>
+                    <button class="btn next">Next</button>
+                </div>
+            </form>
+        </div>
+        <!-- Personal -->
+        <div class="form personal">
+            <h2 class="form__title">PERSONAL DETAILS</h2>
+            <p class="form__des">We will never sell it</p>
+            <form action="">
+                <div class="form-control">
+                    <input id="fName" type="text" name='fName' placeholder="first name" required>
+                </div>
+                <div class="form-control">
+                    <input id="lName" type="text" name='lName' placeholder="last name" required>
+                </div>
+                <div class="form-control">
+                    <input id="number" type="number" name='number' placeholder="phone" required> 
+                </div>
+                <div class="form-control">
+                   <textarea name="adress" id="" rows="4" placeholder="adress"></textarea>
+                </div>
+                <div class="form-control">
+                    <button class="btn prev">Previous</button>
+                    <button type='submit' class="btn next">Next</button>
+                </div>
+            </form>
+        </div>
+   </div>
+       
+   </div>
+   <!-- javascript -->
+    
+          
+
+
+
+
+
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>

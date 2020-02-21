@@ -1,0 +1,18 @@
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 12px solid $primary-color;
+    border-bottom: 10px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 12px solid $primary-color;
+    border-bottom: 10px solid transparent;
+}
+.bg-layout{
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);;
+}

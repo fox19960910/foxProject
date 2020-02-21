@@ -1,0 +1,143 @@
+@import 'variables';
+@import 'grid';
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: Poppins;
+    background:linear-gradient(rgb(228, 155, 96),rgb(165, 86, 161));
+    height:100vh;
+}
+html{
+    font-size:62.5%;
+}
+
+// PROCESS BAR
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 10rem);
+    width:60%;
+    text-align: center;
+    counter-reset: step;
+    li{
+        // &:not(:last-child){
+        //     margin-right:6rem;
+        // }
+        width:33.33%;
+        position: relative;
+        color:#fff;
+        &::before{
+            content:counter(step);
+            counter-increment: step;
+            display: block;
+            width:4rem;
+            height:4rem;
+            border: 1px solid #fff;
+            border-radius:50%;
+            line-height: 4rem;
+            text-align: center;
+            margin: 0 auto 1.5rem auto;
+            background-color: white;
+            color:#000;
+
+        }
+        &::after{
+            content:'';
+            position: absolute;
+            height:2px;
+            width:100%;
+            background:#fff;
+            top:2rem;
+            left:-50%;
+            z-index:-1;
+        
+        }
+        &:first-child::after{
+            content:none;
+        }
+        &.active{
+            color:#fff;
+            &::before{
+                background:#2cc76d;
+                border-color:#2cc76d;
+                color:#fff;
+            }
+            
+        }
+        &.active + li::after{
+            background:#2cc76d;
+        }
+        
+    }
+}
+
+//FORM
+.wrap__form{
+    
+    .form{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(60%,-30%);
+        padding:3rem;
+        background:#fff;
+        width:30%;
+        text-align: center;
+        transition:0.4s;
+        opacity: 0;
+        .form__title{
+            font-size:2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin:1.5rem 0;
+            font-weight:300;
+        }
+        .form__des{
+            font-size:1.4rem;
+            margin-bottom:2rem;
+            &.error{
+                color:red;
+            }
+        }
+        .form-control{
+            &:not(:last-child){
+                margin-bottom:2rem;
+            }
+            input,textarea{
+                width:100%;
+                padding:1.5rem;
+                border: 1px solid #8888;
+                &::placeholder{
+                    color:#8888;
+                    text-transform: capitalize;
+                    font-size:1.6rem;
+                }
+            }
+            .btn{
+                padding:0.8rem 1.5rem;
+                font-size:1.4rem;
+                background:#2cc76d;
+                color:#fff;
+                border: 1px solid #2cc76d;
+                cursor: pointer;
+                &:hover{
+                    background:#229954;
+                }
+                &:not(:first-child){
+                    margin-left:2rem;
+                }
+            }
+        }
+        &.active{
+            opacity: 1;;
+            transform: translate(-50%,-30%);
+        }
+    }
+}

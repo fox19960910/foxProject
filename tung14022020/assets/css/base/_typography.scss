@@ -1,0 +1,32 @@
+.text-white {
+    color: #fff !important;
+}
+.text-heading{
+    color:$heading-color;
+}
+.text-primary {
+    color: $primary-color;
+}
+
+.bg-section {
+    background: $bg-color;
+}
+
+.bg-primary {
+    background: $primary-color;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-dark {
+    background: #000;
+}
+
+h1,h2,h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+    
+}

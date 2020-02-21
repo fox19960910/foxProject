@@ -1,0 +1,122 @@
+//FOOTER
+.footer{
+    padding-top:6rem;
+    background:#000;
+    h2.footer__heading{
+        font-size:1.8rem;
+        color:#fff;
+        margin-bottom:3rem;
+    }
+   .footer__info{
+       padding-bottom:6rem;
+        // footer about
+    .footer__about{
+        .about__des{
+            font-size:1.4rem;
+            color:#888888;
+            line-height:170%;
+            margin-bottom:1.5rem;
+        }
+        .about__more{
+            font-size:1.4rem;
+            color:#888888;
+            display: block;
+            margin-bottom:3rem;
+            transition: 0.4;
+            &:hover{
+                font-size:#fff;
+            }
+        }
+        .about__social{
+            .footer__item{
+                justify-content: center;
+                li{
+                    &:not(:last-child){
+                        margin-right:4rem;
+                    }
+                    a{
+                        color:#fff;
+                        transition: 0.4s;
+                        i{
+                            font-size:2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     // footer infomation
+     .footer__infomation{
+         li{
+             &:not(:last-child){
+                 margin-bottom:1.5rem;
+                 }
+            a{
+                    font-size:1.4rem;
+                    color:#888888;
+                    transition: 0.4;
+                    &:hover{
+                        font-size:#fff;
+                    }
+             }
+         }
+     }
+     // footer account infomation
+     // footer portfolio
+     .footer__portfolio{
+         .portfolio__list{
+             .portfolio__item{
+                 color:#888888;
+                 font-size:1.4rem;
+                 padding: 0.8rem 1.5rem;
+                 border: 1px solid #888888;
+                 display: inline-block;
+                 margin-bottom:10px;
+                 &:not(:last-child){
+                     margin-right:5px;
+                 }
+             }
+         }
+     }
+   }
+   .footer__copy{
+       padding-top:6rem;
+       text-align:center;
+       border-top: 3px dashed #888888;
+       p{
+           color: #888888;
+           font-size:1.6rem;
+           margin-bottom:1rem;
+       }
+   }
+}
+@media screen and (max-width:992px){
+    .footer{
+        .footer__info{
+            .footer__about,.footer__portfolio {
+                text-align: center;
+                margin:2rem 0;
+            }
+            .col-res{
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+            .col-4{
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            
+            }
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .footer{
+        .footer__info{
+            .col-4{
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loginForm">
+        <h2 class="loginForm__title">
+            LOGIN TO YOUR ACCOUNT
+        </h2>
+        <div class="loginForm__input">
+            <form action="" id="form">
+                <div class="form-col">
+                    <input id="email" type="text" class="input-style" name ="email" placeholder="Your account" required>
+                    <label for="email" class="error"></label>
+                </div>
+                <div  class="form-col">
+                    <input id="password" type="password" class="input-style" name ="password" placeholder="Your password" required>
+                    <label for="passsword" class="error"></label>
+                </div>
+                <div  class="form-col flex">
+                    <input id="showPassword" type="checkbox"  name ="showPassword">
+                    <label for="showPassword" class="showPass">Show your password</label>
+                </div>
+                <div class="form-col">
+                    <button id="submit" type="submit">Sign in</button>
+                    <button id="link" >Sign up</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="assets/login.js"></script>
+</body>
+</html>

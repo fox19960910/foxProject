@@ -1,0 +1,16 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass css/main.scss css/main.css"
+
+  },
+  "author": "",
+  "license": "ISC"
+}
